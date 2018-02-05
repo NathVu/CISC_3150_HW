@@ -1,0 +1,16 @@
+Press Enter to Begin
+Enter the coordinates of the center of the first circle and then the radius
+Enter the coordinates of the center of the second circle and then the radius
+The circle with the central coordinates: 1,1 and radius: 8.0 is inside the circle with central coordinates: 0,0 and radius: 10.0
+Enter the coordinates of the center of the first circle and then the radius
+Enter the coordinates of the center of the second circle and then the radius
+The circle with the central coordinates: 2,2 and radius: 3.0 is inside the circle with central coordinates: 5,5 and radius: 10.0
+Enter the coordinates of the center of the first circle and then the radius
+Enter the coordinates of the center of the second circle and then the radius
+The circle with central coordinates: 0,6 and radius: 5.0 and the circle with central coordinates: 6,0 and radius: 5.0 are overlapping 
+Enter the coordinates of the center of the first circle and then the radius
+Enter the coordinates of the center of the second circle and then the radius
+The circle with central coordinates: 0,0 and radius: 5.0 and the circle with central coordinates: 0,10 and radius: 5.0 are touching each other
+Enter the coordinates of the center of the first circle and then the radius
+Enter the coordinates of the center of the second circle and then the radius
+The circle with central coordinates: 0,0 and radius: 5.0 and the circle with central coordinates: 0,11 and radius: 5.0 are separate from each other
