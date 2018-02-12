@@ -1,0 +1,5 @@
+amanaplanacanalpanama is a palindrome
+blah is not a palindrome
+madamimadam is a palindrome
+racecar is a palindrome
+NewYork is not a palindrome
