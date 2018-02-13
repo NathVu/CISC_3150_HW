@@ -1,0 +1,4 @@
+I was testing delimiters and found that someone online
+(https://stackoverflow.com/questions/13522948/stringtokenizer-delimiters-for-each-character)
+was parsing strings using the empty string. I tested it and it worked.
+You would set the delimiter to "".
