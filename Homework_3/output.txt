@@ -1,0 +1,45 @@
+Testing charAt and length
+This is a test of This Function
+Testing Substring
+Th
+hi
+is
+s 
+ i
+is
+s 
+ a
+a 
+ t
+te
+es
+st
+t 
+ o
+of
+f 
+ T
+Th
+hi
+is
+s 
+ F
+Fu
+un
+nc
+ct
+ti
+io
+
+Testing toLowerCase
+this is a test of this function
+
+Testing toUpperCase
+THIS IS A TEST OF THIS FUNCTION
+
+Testing equality
+false
+true
+
+Testing valueOf
+7654321
