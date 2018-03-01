@@ -1,0 +1,22 @@
+10
+5
+A B C D E
+4
+D E A K
+10 
+Q W E R T Y U I O P
+9
+A S D F G H J K L
+1
+y
+3
+F R W
+6 
+A D F G R S 
+3 
+C D H
+2 
+J D
+6 
+A H U E N U 
+
