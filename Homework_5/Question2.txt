@@ -1,0 +1,10 @@
+1)
+A)The actual method called is E, this is an example of overloading
+B)The actual method called is G, this is an example of overloading
+C)The actual method called is A
+D)The method called is the method from class object
+E)The actual method called is C, this is an example of overloading
+F)The actual method called is H, this is an example of overloading
+G)An error would occur
+H)The actual method called is B, this is an example of polymorphism
+I)The actual method called is A, this is an example of polymorphism
