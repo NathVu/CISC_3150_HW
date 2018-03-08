@@ -1,3 +1,4 @@
-I found out that SplittableRandom was a much faster Alternative to Random so that change shaved off a lot off time. Additionally I cut out as many calls as I could (using x * x instead of pow(x,2).
+I found out that SplittableRandom was a much faster Alternative to Random so that change shaved off a lot off time. 
+Additionally I cut out as many calls as I could (using x * x instead of pow(x,2) for example).
 I also realized I did not need to be iterating square since that will always be 4 billion.
 My processor is a 1.6 GHz Intel Core i5
