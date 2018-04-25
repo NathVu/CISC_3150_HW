@@ -1,0 +1,7 @@
+Because of how java handles inheritance in a class it would know what you are
+talking about if you are inheriting from the parent class since you can only
+inherit from one. You can inherit from multiple interfaces though so you
+have to specify which one and then call super so java knows what you are doing
+
+
+source: https://stackoverflow.com/questions/28137440/java-8-default-method-readability
