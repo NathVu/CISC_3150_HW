@@ -1,0 +1,2337 @@
+wildfly-11.0.0.Final
++----.DS_Store
++----copyright.txt
++----bin
+|    +----add-user.properties
+|    +----launcher.jar
+|    +----vault.sh
+|    +----add-user.bat
+|    +----standalone.conf
+|    +----add-user.ps1
+|    +----jdr.ps1
+|    +----jdr.bat
+|    +----standalone.bat
+|    +----jconsole.sh
+|    +----jboss-cli.sh
+|    +----standalone.ps1
+|    +----wsprovide.sh
+|    +----common.ps1
+|    +----appclient.conf.ps1
+|    +----appclient.bat
+|    +----jboss-cli.xml
+|    +----wsprovide.bat
+|    +----appclient.conf.bat
+|    +----appclient.ps1
+|    +----domain.conf
+|    +----wsprovide.ps1
+|    +----elytron-tool.bat
+|    +----jconsole.bat
+|    +----wildfly-elytron-tool.jar
+|    +----appclient.sh
+|    +----standalone.sh
+|    +----jconsole.ps1
+|    +----elytron-tool.ps1
+|    +----jdr.sh
+|    +----domain.sh
+|    +----product.conf
+|    +----domain.ps1
+|    +----add-user.sh
+|    +----wsconsume.sh
+|    +----domain.bat
+|    +----wsconsume.bat
+|    +----elytron-tool.sh
+|    +----domain.conf.ps1
+|    +----jboss-cli.ps1
+|    +----standalone.conf.bat
+|    +----wsconsume.ps1
+|    +----domain.conf.bat
+|    +----standalone.conf.ps1
+|    +----jboss-cli.bat
+|    +----vault.bat
+|    +----client
+|    |    +----README-EJB-JMS.txt
+|    |    +----jboss-cli-client.jar
+|    |    +----README-CLI-JCONSOLE.txt
+|    |    +----jboss-client.jar
+|    +----.jbossclirc
+|    +----jboss-cli-logging.properties
+|    +----vault.ps1
+|    +----appclient.conf
++----standalone
+|    +----configuration
+|    |    +----application-roles.properties
+|    |    +----logging.properties
+|    |    +----standalone-full-ha.xml
+|    |    +----standalone-ha.xml
+|    |    +----mgmt-groups.properties
+|    |    +----standalone_xml_history
+|    |    |    +----snapshot
+|    |    |    +----standalone.initial.xml
+|    |    |    +----standalone.last.xml
+|    |    |    +----current
+|    |    |    +----standalone.boot.xml
+|    |    +----application-users.properties
+|    |    +----standalone-full.xml
+|    |    +----application.keystore
+|    |    +----mgmt-users.properties
+|    |    +----standalone-load-balancer.xml
+|    |    +----standalone.xml
+|    +----.DS_Store
+|    +----lib
+|    |    +----.DS_Store
+|    |    +----ext
+|    +----log
+|    |    +----server.log.2017-12-14
+|    |    +----server.log.2017-12-13
+|    |    +----server.log.2018-01-12
+|    |    +----server.log.2017-12-10
+|    |    +----server.log.2017-12-17
+|    |    +----audit.log
+|    |    +----server.log.2017-12-18
+|    |    +----server.log.2017-12-20
+|    |    +----server.log
+|    +----data
+|    |    +----.DS_Store
+|    |    +----tx-object-store
+|    |    |    +----ShadowNoFileLockStore
+|    |    |         +----defaultStore
+|    |    +----content
+|    |    |    +----.DS_Store
+|    |    |    +----ae
+|    |    |    |    +----58ddaeb9f61feebd8d4b7555d26d98fdc510a6
+|    |    |    |         +----.DS_Store
+|    |    |    +----70
+|    |    |         +----e0ce98d63cfcac2cdd12f699ad247fe9c230ac
+|    |    |              +----content
+|    |    +----timer-service-data
+|    |    +----kernel
+|    |         +----process-uuid
+|    +----tmp
+|    |    +----vfs
+|    |    |    +----temp
+|    |    +----.DS_Store
+|    |    +----auth
+|    +----deployments
+|         +----.DS_Store
+|         +----README.txt
+|         +----NathanVulakh_LouisFranco_CISC3120_MW2_HonorsAssignment.war
+|         +----NathanVulakh_LouisFranco_CISC3120_MW2_HonorsAssignment.war.deployed
++----appclient
+|    +----configuration
+|    |    +----logging.properties
+|    |    +----appclient.xml
+|    +----.DS_Store
++----docs
+|    +----licenses
+|    |    +----licenses.xsl
+|    |    +----gnu general public license v2.0 only, with classpath exception.txt
+|    |    +----gnu lesser general public license v3.0 only.txt
+|    |    +----core-feature-pack-licenses.html
+|    |    +----the bsd license.txt
+|    |    +----full-feature-pack-licenses.xml
+|    |    +----gnu general public license, version 2 with the classpath exception.txt
+|    |    +----bsd 3-clause no nuclear license.html
+|    |    +----gnu library general public license v2 only.txt
+|    |    +----the antlr 2.7.7 license.txt
+|    |    +----gnu general public license v2.0 only.html
+|    |    +----servlet-feature-pack-licenses.html
+|    |    +----servlet-feature-pack-licenses.xml
+|    |    +----public domain.txt
+|    |    +----licenses.html
+|    |    +----mozilla public license 2.0.html
+|    |    +----apache license 2.0.txt
+|    |    +----creative commons attribution 2.5.html
+|    |    +----bsd 3-clause new or revised license.html
+|    |    +----eclipse distribution license, version 1.0.txt
+|    |    +----mit license.txt
+|    |    +----common development and distribution license 1.1.txt
+|    |    +----indiana university extreme lab software license 1.1.1.html
+|    |    +----eclipse public license 1.0.txt
+|    |    +----plexus classworlds license.html
+|    |    +----licenses.xml
+|    |    +----the jsoup mit license.html
+|    |    +----common development and distribution license 1.0.txt
+|    |    +----the asm bsd license.txt
+|    |    +----licenses-merged.xsl
+|    |    +----gnu lesser general public license v2.1 only.txt
+|    |    +----mozilla public license 1.1.txt
+|    |    +----full-feature-pack-licenses.html
+|    |    +----common public license 1.0.txt
+|    |    +----core-feature-pack-licenses.xml
+|    |    +----licenses.css
+|    |    +----gnu lesser general public license v2.1 or later.txt
+|    +----contrib
+|    |    +----scripts
+|    |         +----init.d
+|    |         |    +----wildfly-init-debian.sh
+|    |         |    +----wildfly-init-redhat.sh
+|    |         |    +----wildfly.conf
+|    |         +----systemd
+|    |         |    +----wildfly.service
+|    |         |    +----launch.sh
+|    |         |    +----README
+|    |         |    +----wildfly.conf
+|    |         +----README.md
+|    |         +----service
+|    |              +----amd64
+|    |              |    +----wildfly-service.exe
+|    |              +----wildfly-mgr.exe
+|    |              +----wildfly-service.exe
+|    |              +----service.bat
+|    +----schema
+|    |    +----jboss-as-config_2_2.xsd
+|    |    +----web-common_3_1.xsd
+|    |    +----elytron-1_0_1.xsd
+|    |    +----wildfly-remoting_3_0.xsd
+|    |    +----jboss-as-txn_1_3.xsd
+|    |    +----wildfly-ejb3_5_0.xsd
+|    |    +----singleton-deployment_1_0.xsd
+|    |    +----jboss-ejb-delivery-active_1_1.xsd
+|    |    +----jboss-ejb-delivery-active_1_0.xsd
+|    |    +----jboss-as-txn_1_2.xsd
+|    |    +----jboss-ejb-security-role_1_0.xsd
+|    |    +----jboss-web_7_2.xsd
+|    |    +----web-common_3_0.xsd
+|    |    +----jboss-deployment-dependencies-1_0.xsd
+|    |    +----jboss-as-config_2_1.xsd
+|    |    +----jboss-as-jaxrs_1_0.xsd
+|    |    +----jboss-as-jgroups_5_0.xsd
+|    |    +----jboss-web_7_0.xsd
+|    |    +----wildfly-security-manager_1_0.xsd
+|    |    +----javaee_web_services_1_2.xsd
+|    |    +----jboss-pojo_7_0.xsd
+|    |    +----jboss-as-xts_1_0.xsd
+|    |    +----jboss-as-jsf_1_0.xsd
+|    |    +----jboss-as-txn_1_0.xsd
+|    |    +----j2ee_jaxrpc_mapping_1_1.xsd
+|    |    +----jboss-as-resource-adapters_1_0.xsd
+|    |    +----jboss-as-resource-adapters_1_1.xsd
+|    |    +----wildfly-batch-jberet_1_0.xsd
+|    |    +----jboss-as-txn_1_1.xsd
+|    |    +----jboss-as-jsr77_1_0.xsd
+|    |    +----javaee_web_services_1_3.xsd
+|    |    +----jboss-web_7_1.xsd
+|    |    +----jboss-as-config_2_0.xsd
+|    |    +----wildfly-datasources_3_0.xsd
+|    |    +----wildfly-ejb3_3_0.xsd
+|    |    +----wildfly-singleton_1_0.xsd
+|    |    +----java-properties_1_0.xsd
+|    |    +----jboss-ejb-security_1_0.xsd
+|    |    +----jboss-as-jgroups_1_1.xsd
+|    |    +----jboss-as-txn_1_5.xsd
+|    |    +----jboss-as-cli_1_0.xsd
+|    |    +----jboss-ejb-client_1_1.xsd
+|    |    +----jboss-as-iiop-openjdk_1_0.xsd
+|    |    +----orm_1_0.xsd
+|    |    +----jboss-ejb-client_1_0.xsd
+|    |    +----jboss-as-cli_1_1.xsd
+|    |    +----jboss-as-txn_1_4.xsd
+|    |    +----jboss-as-jgroups_1_0.xsd
+|    |    +----web-facesconfig_1_2.xsd
+|    |    +----persistence_1_0.xsd
+|    |    +----jboss-as-mail_1_2.xsd
+|    |    +----jboss-ejb-security_1_1.xsd
+|    |    +----jboss-as-threads_1_0.xsd
+|    |    +----jboss-as-mail_1_0.xsd
+|    |    +----jboss-as-sar_1_0.xsd
+|    |    +----wildfly-picketlink-idm_1_1.xsd
+|    |    +----javaee_web_services_1_4.xsd
+|    |    +----jboss-as-jgroups_3_0.xsd
+|    |    +----jboss-as-jpa_1_1.xsd
+|    |    +----web-partialresponse_2_2.xsd
+|    |    +----trans-timeout-1_0.xsd
+|    |    +----jboss-ejb-client_1_2.xsd
+|    |    +----jbxb_1_0.xsd
+|    |    +----jboss-as-cli_1_3.xsd
+|    |    +----wildfly-messaging-activemq_2_0.xsd
+|    |    +----jboss-as-cli_1_2.xsd
+|    |    +----jbossws-web-services_1_0.xsd
+|    |    +----wildfly-datasources_5_0.xsd
+|    |    +----jboss-as-jpa_1_0.xsd
+|    |    +----jboss-ejb-cache_1_0.xsd
+|    |    +----wildfly-picketlink-idm_1_0.xsd
+|    |    +----jboss-as-mail_1_1.xsd
+|    |    +----jboss-common_6_0.xsd
+|    |    +----jboss-as-threads_1_1.xsd
+|    |    +----jboss-deployment-structure-1_0.xsd
+|    |    +----jboss-weld-1_0.xsd
+|    |    +----jboss-as-jgroups_4_0.xsd
+|    |    +----jboss-as-jmx_1_2.xsd
+|    |    +----jboss-as-config_1_3.xsd
+|    |    +----j2ee_1_4.xsd
+|    |    +----wildfly-datasources_2_0.xsd
+|    |    +----jboss-as-config_1_2.xsd
+|    |    +----jboss-as-jmx_1_3.xsd
+|    |    +----jboss-weld-1_1.xsd
+|    |    +----jboss-deployment-structure-1_1.xsd
+|    |    +----jboss-as-remoting_1_2.xsd
+|    |    +----wildfly-ejb3_4_0.xsd
+|    |    +----jboss-as-remoting_1_0.xsd
+|    |    +----jboss-deployment-structure-1_3.xsd
+|    |    +----wildfly-batch-jberet_2_0.xsd
+|    |    +----wildfly-remoting_2_0.xsd
+|    |    +----jboss-as-jmx_1_1.xsd
+|    |    +----jboss-as-config_1_0.xsd
+|    |    +----jboss-as-config_1_1.xsd
+|    |    +----jboss-as-jmx_1_0.xsd
+|    |    +----jboss-as-remoting_1_1.xsd
+|    |    +----jboss-deployment-structure-1_2.xsd
+|    |    +----jboss-as-txn_2_0.xsd
+|    |    +----jboss-as-xts_2_0.xsd
+|    |    +----jbossws-jaxws-config_4_0.xsd
+|    |    +----jboss-as-jgroups_2_0.xsd
+|    |    +----jboss-app_7_0.xsd
+|    |    +----jboss-as-config_1_5.xsd
+|    |    +----persistence_2_0.xsd
+|    |    +----web-facesconfig_2_2.xsd
+|    |    +----jboss-as-config_1_4.xsd
+|    |    +----jboss-as-cli_2_0.xsd
+|    |    +----wildfly-datasources_4_0.xsd
+|    |    +----web-fragment_3_0.xsd
+|    |    +----wildfly-bean-validation_1_0.xsd
+|    |    +----wildfly-remoting_4_0.xsd
+|    |    +----jboss-as-config_1_6.xsd
+|    |    +----wildfly-picketlink-idm_2_0.xsd
+|    |    +----jboss-as-jca_1_1.xsd
+|    |    +----jboss-common_5_1.xsd
+|    |    +----jboss-as-config_1_7.xsd
+|    |    +----jboss-ejb3-spec-2_0.xsd
+|    |    +----wildfly-messaging-activemq_1_0.xsd
+|    |    +----web-fragment_3_1.xsd
+|    |    +----wildfly-http-client_1_0.xsd
+|    |    +----jboss-ejb3-2_0.xsd
+|    |    +----application_1_4.xsd
+|    |    +----wildfly-jca_4_0.xsd
+|    |    +----wildfly-undertow_1_2.xsd
+|    |    +----jndi-binding-service_1_0.xsd
+|    |    +----jboss-as-web_1_4.xsd
+|    |    +----jboss-as-logging_1_3.xsd
+|    |    +----jboss-as-infinispan_4_0.xsd
+|    |    +----wildfly-undertow_3_0.xsd
+|    |    +----jboss-as-ee_2_0.xsd
+|    |    +----web-app_2_4.xsd
+|    |    +----discovery-1_0.xsd
+|    |    +----javaee_6.xsd
+|    |    +----jboss-as-ejb3_1_1.xsd
+|    |    +----module-1_3.xsd
+|    |    +----wildfly-config_4_1.xsd
+|    |    +----batch-jberet_1_0.xsd
+|    |    +----wildfly-config_4_0.xsd
+|    |    +----module-1_2.xsd
+|    |    +----jboss-as-jacorb_1_4.xsd
+|    |    +----jboss-ejb-resource-adapter-binding_1_0.xsd
+|    |    +----jboss-ejb-pool_1_0.xsd
+|    |    +----jboss-as-ejb3_1_0.xsd
+|    |    +----javaee_7.xsd
+|    |    +----web-app_2_5.xsd
+|    |    +----jboss-as-logging_3_0.xsd
+|    |    +----wildfly-undertow_3_1.xsd
+|    |    +----jboss-as-logging_1_2.xsd
+|    |    +----jboss-as-web_1_5.xsd
+|    |    +----j2ee_web_services_client_1_1.xsd
+|    |    +----wildfly-io_1_0.xsd
+|    |    +----wildfly-undertow_1_1.xsd
+|    |    +----jboss-as-logging_1_0.xsd
+|    |    +----wildfly-txn_3_0.xsd
+|    |    +----jboss-ejb-clustering_1_1.xsd
+|    |    +----elytron-1_0.xsd
+|    |    +----jboss-as-deployment-scanner_1_1.xsd
+|    |    +----jboss-as-naming_2_0.xsd
+|    |    +----jboss-as-weld_4_0.xsd
+|    |    +----wildfly-picketlink-federation_1_0.xsd
+|    |    +----jboss-web_11_0.xsd
+|    |    +----javaee_5.xsd
+|    |    +----wildfly-request-controller_1_0.xsd
+|    |    +----jboss-as-ejb3_1_2.xsd
+|    |    +----module-1_0.xsd
+|    |    +----wildfly-config_4_2.xsd
+|    |    +----module-1_1.xsd
+|    |    +----jboss-client_6_0.xsd
+|    |    +----jboss-ejb-container-interceptors_1_0.xsd
+|    |    +----jboss-as-ejb3_1_3.xsd
+|    |    +----jboss-as-config_1_8.xsd
+|    |    +----wildfly-picketlink-federation_1_1.xsd
+|    |    +----wildfly-mail_3_0.xsd
+|    |    +----jboss-as-deployment-scanner_1_0.xsd
+|    |    +----jboss-as-logging_1_1.xsd
+|    |    +----wildfly-undertow_1_0.xsd
+|    |    +----wildfly-resource-adapters_2_0.xsd
+|    |    +----wildfly-io_1_1.xsd
+|    |    +----wildfly-cli_3_0.xsd
+|    |    +----jboss-as-logging_1_5.xsd
+|    |    +----jboss-as-web_1_2.xsd
+|    |    +----jboss-service_7_0.xsd
+|    |    +----wildfly-client-ejb_3_0.xsd
+|    |    +----jboss-web_8_0.xsd
+|    |    +----application_7.xsd
+|    |    +----jboss-as-infinispan_2_0.xsd
+|    |    +----wildfly-security_2_0.xsd
+|    |    +----jboss-as-ee_4_0.xsd
+|    |    +----jboss-as-security_1_0.xsd
+|    |    +----wildfly-jca_2_0.xsd
+|    |    +----jboss-as-jacorb_1_3.xsd
+|    |    +----module-1_5.xsd
+|    |    +----jsp_2_0.xsd
+|    |    +----jsp_2_1.xsd
+|    |    +----jboss-as-mod-cluster_1_2.xsd
+|    |    +----ejb-jar_2_1.xsd
+|    |    +----jboss-as-jacorb_1_2.xsd
+|    |    +----wildfly-elytron_1_2.xsd
+|    |    +----jboss-as-mod-cluster_3_0.xsd
+|    |    +----jboss-as-security_1_1.xsd
+|    |    +----application_6.xsd
+|    |    +----jboss-as-datasources_1_1.xsd
+|    |    +----jboss-as-web_1_3.xsd
+|    |    +----jboss-as-logging_1_4.xsd
+|    |    +----user-roles_1_0.xsd
+|    |    +----wildfly-cli_3_1.xsd
+|    |    +----jboss-as-webservices_1_2.xsd
+|    |    +----jboss-as-webservices_1_0.xsd
+|    |    +----jboss-jpa_1_0.xsd
+|    |    +----wildfly-discovery_1_0.xsd
+|    |    +----jboss-as-web_1_1.xsd
+|    |    +----j2ee_web_services_1_1.xsd
+|    |    +----wildfly-threads_2_0.xsd
+|    |    +----jboss-as-messaging_2_0.xsd
+|    |    +----jboss-as-weld_2_0.xsd
+|    |    +----jboss-as-ejb3_1_4.xsd
+|    |    +----wildfly-elytron_1_0.xsd
+|    |    +----jboss-as-jacorb_1_0.xsd
+|    |    +----module-1_6.xsd
+|    |    +----jboss-as-mod-cluster_1_0.xsd
+|    |    +----jsp_2_3.xsd
+|    |    +----jboss-as-mod-cluster_1_1.xsd
+|    |    +----jsp_2_2.xsd
+|    |    +----jboss-as-jacorb_1_1.xsd
+|    |    +----wildfly-elytron_1_1.xsd
+|    |    +----wildfly-resource-adapters_4_0.xsd
+|    |    +----jboss-as-ejb3_1_5.xsd
+|    |    +----jboss-as-security_1_2.xsd
+|    |    +----wildfly-core-management_1_0.xsd
+|    |    +----jboss-as-datasources_1_2.xsd
+|    |    +----application_5.xsd
+|    |    +----jboss-as-jdr_1_0.xsd
+|    |    +----wildfly-messaging-activemq-deployment_1_0.xsd
+|    |    +----jboss-as-web_1_0.xsd
+|    |    +----jboss-as-webservices_1_1.xsd
+|    |    +----jboss-as-cmp_1_1.xsd
+|    |    +----jboss-as-ejb3_2_0.xsd
+|    |    +----jboss-web_10_0.xsd
+|    |    +----jboss-ejb-iiop_1_0.xsd
+|    |    +----javaee_web_services_client_1_3.xsd
+|    |    +----jboss-as-messaging_1_4.xsd
+|    |    +----jboss-as-jaxr_1_0.xsd
+|    |    +----jboss-as-ee_1_1.xsd
+|    |    +----jboss-as-naming_1_2.xsd
+|    |    +----jboss-as-naming_1_3.xsd
+|    |    +----jboss-as-ee_1_0.xsd
+|    |    +----jboss-as-jaxr_1_1.xsd
+|    |    +----wildfly-resource-adapters_3_0.xsd
+|    |    +----jboss-as-messaging_1_5.xsd
+|    |    +----javaee_web_services_client_1_2.xsd
+|    |    +----wildfly-mail_2_0.xsd
+|    |    +----jboss-as-cmp_1_0.xsd
+|    |    +----jboss-as-infinispan_1_4.xsd
+|    |    +----xml.xsd
+|    |    +----xnio_3_5.xsd
+|    |    +----wildfly-undertow_2_0.xsd
+|    |    +----jboss-as-ee_3_0.xsd
+|    |    +----wildfly-jca_5_0.xsd
+|    |    +----jboss-as-ee_1_2.xsd
+|    |    +----jboss-as-naming_1_1.xsd
+|    |    +----jboss-as-deployment-scanner_2_0.xsd
+|    |    +----jboss-as-naming_1_0.xsd
+|    |    +----jboss-as-logging_2_0.xsd
+|    |    +----wildfly-io_2_0.xsd
+|    |    +----wildfly-config_5_0.xsd
+|    |    +----wildfly-picketlink-federation_2_0.xsd
+|    |    +----jboss-as-infinispan_1_5.xsd
+|    |    +----jboss-as-infinispan_1_1.xsd
+|    |    +----wildfly-txn_4_0.xsd
+|    |    +----web-jsptaglibrary_2_1.xsd
+|    |    +----wildfly-client_1_0.xsd
+|    |    +----web-app_3_1.xsd
+|    |    +----application-client_7.xsd
+|    |    +----jboss-as-weld_3_0.xsd
+|    |    +----jboss-as-messaging_3_0.xsd
+|    |    +----jboss-as-messaging_1_2.xsd
+|    |    +----jboss-as-naming_1_4.xsd
+|    |    +----jboss-as-pojo_1_0.xsd
+|    |    +----jboss-as-messaging_1_3.xsd
+|    |    +----jboss-as-web_2_2.xsd
+|    |    +----javaee_web_services_client_1_4.xsd
+|    |    +----shared-session-config_1_0.xsd
+|    |    +----application-client_6.xsd
+|    |    +----web-app_3_0.xsd
+|    |    +----wildfly-iiop-openjdk_2_0.xsd
+|    |    +----ejb-jar_3_2.xsd
+|    |    +----web-jsptaglibrary_2_0.xsd
+|    |    +----wildfly-batch_1_0.xsd
+|    |    +----wildfly-resource-adapters_5_0.xsd
+|    |    +----web-facelettaglibrary_2_2.xsd
+|    |    +----jboss-as-infinispan_1_0.xsd
+|    |    +----wildfly-jca_3_0.xsd
+|    |    +----jboss-as-infinispan_1_2.xsd
+|    |    +----wildfly-rts_1_0.xsd
+|    |    +----ejb-jar_3_0.xsd
+|    |    +----jboss-as-infinispan_3_0.xsd
+|    |    +----wildfly-undertow_4_0.xsd
+|    |    +----jboss-remoting_5_0.xsd
+|    |    +----jboss-as-web_2_0.xsd
+|    |    +----jboss-as-messaging_1_1.xsd
+|    |    +----wildfly-ejb-timer_1_0.xsd
+|    |    +----wildfly-config_3_0.xsd
+|    |    +----jboss-as-weld_1_0.xsd
+|    |    +----jboss-as-messaging_1_0.xsd
+|    |    +----jboss-as-web_2_1.xsd
+|    |    +----jboss-as-webservices_2_0.xsd
+|    |    +----jboss-as-mod-cluster_2_0.xsd
+|    |    +----jboss-as-jacorb_2_0.xsd
+|    |    +----ejb-jar_3_1.xsd
+|    |    +----jboss-as-infinispan_1_3.xsd
+|    +----examples
+|         +----enable-elytron.cli
+|         +----configs
+|              +----standalone-azure-ha.xml
+|              +----standalone-rts.xml
+|              +----standalone-gossip-ha.xml
+|              +----domain-ec2.xml
+|              +----standalone-ec2-ha.xml
+|              +----standalone-jts.xml
+|              +----standalone-minimalistic.xml
+|              +----standalone-activemq-colocated.xml
+|              +----standalone-genericjms.xml
+|              +----standalone-ec2-full-ha.xml
+|              +----standalone-azure-full-ha.xml
+|              +----standalone-picketlink.xml
+|              +----standalone-gossip-full-ha.xml
+|              +----standalone-xts.xml
++----.installation
++----welcome-content
+|    +----wildfly_logo.png
+|    +----documentation.html
+|    +----favicon.ico
+|    +----index.html
+|    +----.DS_Store
+|    +----image1.mp4
+|    +----bkg.gif
+|    +----to_war_we_go
+|    |    +----index.html
+|    |    +----.DS_Store
+|    |    +----styles.css
+|    |    +----giphy.gif
+|    |    +----.test1.html.swp
+|    |    +----.test1.html.swx
+|    +----jbosscommunity_logo_hori_white.png
+|    +----noconsole.html
+|    +----wildfly.css
+|    +----index_noconsole.html
+|    +----noredirect.html
+|    +----Untitled
++----jboss-modules.jar
++----README.txt
++----LICENSE.txt
++----modules
+|    +----.DS_Store
+|    +----system
+|         +----.DS_Store
+|         +----layers
+|              +----.DS_Store
+|              +----base
+|                   +----sun
+|                   |    +----scripting
+|                   |    |    +----main
+|                   |    |         +----service-loader-resources
+|                   |    |         |    +----META-INF
+|                   |    |         |         +----services
+|                   |    |         |              +----javax.script.ScriptEngineFactory
+|                   |    |         +----module.xml
+|                   |    +----jdk
+|                   |         +----main
+|                   |              +----service-loader-resources
+|                   |              |    +----META-INF
+|                   |              |         +----services
+|                   |              |              +----java.sql.Driver
+|                   |              +----module.xml
+|                   +----asm
+|                   |    +----asm
+|                   |         +----main
+|                   |              +----asm-3.3.1.jar
+|                   |              +----module.xml
+|                   +----net
+|                   |    +----jcip
+|                   |         +----main
+|                   |              +----module.xml
+|                   |              +----jcip-annotations-1.0.jar
+|                   +----nu
+|                   |    +----xom
+|                   |         +----main
+|                   |              +----xom-1.2.10.jar
+|                   |              +----module.xml
+|                   +----javaee
+|                   |    +----api
+|                   |         +----main
+|                   |              +----module.xml
+|                   +----org
+|                   |    +----javassist
+|                   |    |    +----main
+|                   |    |         +----javassist-3.20.0-GA.jar
+|                   |    |         +----module.xml
+|                   |    +----omg
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    +----projectodd
+|                   |    |    +----vdx
+|                   |    |         +----main
+|                   |    |              +----vdx-core-1.1.6.jar
+|                   |    |              +----vdx-wildfly-1.1.6.jar
+|                   |    |              +----module.xml
+|                   |    +----dom4j
+|                   |    |    +----main
+|                   |    |         +----module.xml
+|                   |    |         +----dom4j-1.6.1.jar
+|                   |    +----eclipse
+|                   |    |    +----persistence
+|                   |    |    |    +----main
+|                   |    |    |         +----jipijapa-eclipselink-11.0.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----jdt
+|                   |    |         +----ecj
+|                   |    |              +----main
+|                   |    |                   +----module.xml
+|                   |    |                   +----ecj-4.6.1.jar
+|                   |    +----wildfly
+|                   |    |    +----mod_cluster
+|                   |    |    |    +----undertow
+|                   |    |    |         +----main
+|                   |    |    |              +----wildfly-mod_cluster-undertow-11.0.0.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----transaction
+|                   |    |    |    +----client
+|                   |    |    |         +----main
+|                   |    |    |              +----wildfly-transaction-client-1.0.2.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----extension
+|                   |    |    |    +----mod_cluster
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-mod_cluster-extension-11.0.0.Final.jar
+|                   |    |    |    +----core-management
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-core-management-subsystem-3.0.8.Final.jar
+|                   |    |    |    +----security
+|                   |    |    |    |    +----manager
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-security-manager-3.0.8.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----rts
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-rts-11.0.0.Final.jar
+|                   |    |    |    +----picketlink
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-picketlink-11.0.0.Final.jar
+|                   |    |    |    +----request-controller
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-request-controller-3.0.8.Final.jar
+|                   |    |    |    +----io
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-io-3.0.8.Final.jar
+|                   |    |    |    +----discovery
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-discovery-3.0.8.Final.jar
+|                   |    |    |    +----clustering
+|                   |    |    |    |    +----singleton
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-clustering-singleton-extension-11.0.0.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----undertow
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-undertow-11.0.0.Final.jar
+|                   |    |    |    +----core-management-client
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-core-management-client-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----elytron
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-elytron-integration-3.0.8.Final.jar
+|                   |    |    |    +----batch
+|                   |    |    |    |    +----jberet
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-batch-jberet-11.0.0.Final.jar
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-batch-11.0.0.Final.jar
+|                   |    |    |    +----messaging-activemq
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----database
+|                   |    |    |    |         |    +----journal-sql.properties
+|                   |    |    |    |         +----artemis-wildfly-integration-1.0.2.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-messaging-activemq-11.0.0.Final.jar
+|                   |    |    |    +----bean-validation
+|                   |    |    |         +----main
+|                   |    |    |              +----wildfly-bean-validation-11.0.0.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----iiop-openjdk
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----wildfly-iiop-openjdk-11.0.0.Final.jar
+|                   |    |    +----security
+|                   |    |    |    +----elytron-private
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-elytron-1.1.6.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----elytron-web
+|                   |    |    |    |    +----undertow-server
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----undertow-server-1.0.1.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----manager
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----elytron
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    +----discovery
+|                   |    |    |    +----main
+|                   |    |    |         +----wildfly-discovery-client-1.0.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----clustering
+|                   |    |    |    +----jgroups
+|                   |    |    |    |    +----spi
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----wildfly-clustering-jgroups-spi-11.0.0.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----api
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-clustering-jgroups-api-11.0.0.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----web
+|                   |    |    |    |    +----undertow
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-web-undertow-11.0.0.Final.jar
+|                   |    |    |    |    +----spi
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-web-spi-11.0.0.Final.jar
+|                   |    |    |    |    +----api
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-web-api-11.0.0.Final.jar
+|                   |    |    |    |    +----infinispan
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-clustering-web-infinispan-11.0.0.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----ee
+|                   |    |    |    |    +----spi
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-ee-spi-11.0.0.Final.jar
+|                   |    |    |    |    +----infinispan
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-clustering-ee-infinispan-11.0.0.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----marshalling
+|                   |    |    |    |    +----jboss
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-marshalling-jboss-11.0.0.Final.jar
+|                   |    |    |    |    +----spi
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-marshalling-spi-11.0.0.Final.jar
+|                   |    |    |    |    +----api
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----wildfly-clustering-marshalling-api-11.0.0.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----infinispan
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-clustering-marshalling-infinispan-11.0.0.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----server
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-clustering-server-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----spi
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-clustering-spi-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----singleton
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-clustering-singleton-api-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----api
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-clustering-api-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----infinispan
+|                   |    |    |    |    +----spi
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-clustering-infinispan-spi-11.0.0.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----service
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-clustering-service-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----ejb
+|                   |    |    |         +----spi
+|                   |    |    |         |    +----main
+|                   |    |    |         |         +----module.xml
+|                   |    |    |         |         +----wildfly-clustering-ejb-spi-11.0.0.Final.jar
+|                   |    |    |         +----infinispan
+|                   |    |    |              +----main
+|                   |    |    |                   +----wildfly-clustering-ejb-infinispan-11.0.0.Final.jar
+|                   |    |    |                   +----module.xml
+|                   |    |    +----common
+|                   |    |    |    +----main
+|                   |    |    |         +----wildfly-common-1.2.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----naming
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    +----naming-client
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----wildfly-naming-client-1.0.7.Final.jar
+|                   |    |    +----http-client
+|                   |    |    |    +----transaction
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-http-transaction-client-1.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----common
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-http-client-common-1.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----naming
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-http-naming-client-1.0.8.Final.jar
+|                   |    |    |    +----ejb
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    |              +----wildfly-http-ejb-client-1.0.8.Final.jar
+|                   |    |    +----openssl
+|                   |    |    |    +----main
+|                   |    |    |         +----wildfly-openssl-java-1.0.2.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----lib
+|                   |    |    |              +----linux-x86_64
+|                   |    |    |              |    +----libwfssl.so
+|                   |    |    |              +----win-x86_64
+|                   |    |    |              |    +----wfssl.dll
+|                   |    |    |              +----win-i686
+|                   |    |    |              |    +----wfssl.dll
+|                   |    |    |              +----linux-i386
+|                   |    |    |              |    +----libwfssl.so
+|                   |    |    |              +----solaris-sparcv9
+|                   |    |    |              |    +----libwfssl.so
+|                   |    |    |              +----macosx-x86_64
+|                   |    |    |              |    +----libwfssl.dylib
+|                   |    |    |              +----solaris-x86_64
+|                   |    |    |                   +----libwfssl.so
+|                   |    |    +----client
+|                   |    |    |    +----config
+|                   |    |    |         +----main
+|                   |    |    |              +----wildfly-client-config-1.0.0.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----embedded
+|                   |    |         +----main
+|                   |    |              +----wildfly-embedded-3.0.8.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----jboss
+|                   |    |    +----invocation
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-invocation-1.5.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----remoting
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jboss-remoting-5.0.5.Final.jar
+|                   |    |    +----mod_cluster
+|                   |    |    |    +----core
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----mod_cluster-core-1.3.7.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----container
+|                   |    |    |         +----spi
+|                   |    |    |              +----main
+|                   |    |    |                   +----mod_cluster-container-spi-1.3.7.Final.jar
+|                   |    |    |                   +----module.xml
+|                   |    |    +----weld
+|                   |    |    |    +----core
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----weld-core-impl-2.4.3.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----spi
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----weld-spi-2.4.SP1.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----api
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----weld-api-2.4.SP1.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----probe
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    |              +----weld-probe-core-2.4.3.Final.jar
+|                   |    |    +----jts
+|                   |    |    |    +----integration
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----narayana-jts-integration-5.5.30.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----narayana-jts-idlj-5.5.30.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----deployers
+|                   |    |    |    +----jboss-service-deployer
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    +----vfs
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-vfs-3.2.12.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----staxmapper
+|                   |    |    |    +----main
+|                   |    |    |         +----staxmapper-1.3.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----ejb-client
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-ejb-client-4.0.7.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----xts
+|                   |    |    |    +----main
+|                   |    |    |         +----jbossxts-5.5.30.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jbosstxbridge-5.5.30.Final.jar
+|                   |    |    +----security
+|                   |    |    |    +----xacml
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----jbossxacml-2.0.8.Final.jar
+|                   |    |    |    +----negotiation
+|                   |    |    |         +----main
+|                   |    |    |              +----jboss-negotiation-spnego-3.0.4.Final.jar
+|                   |    |    |              +----jboss-negotiation-ntlm-3.0.4.Final.jar
+|                   |    |    |              +----jboss-negotiation-common-3.0.4.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    |              +----jboss-negotiation-extras-3.0.4.Final.jar
+|                   |    |    +----integration
+|                   |    |    |    +----ext-content
+|                   |    |    |         +----main
+|                   |    |    |              +----bundled
+|                   |    |    |              |    +----jboss-seam-int-jbossas.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----jaxbintros
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-jaxb-intros-1.0.2.GA.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----marshalling
+|                   |    |    |    +----river
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jboss-marshalling-river-2.0.2.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-marshalling-2.0.2.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----classfilewriter
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jboss-classfilewriter-1.2.1.Final.jar
+|                   |    |    +----resteasy
+|                   |    |    |    +----resteasy-spring
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----bundled
+|                   |    |    |    |         |    +----resteasy-spring-jar
+|                   |    |    |    |         |         +----resteasy-spring-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-multipart-provider
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-multipart-provider-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-json-p-provider
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----resteasy-json-p-provider-3.0.24.Final.jar
+|                   |    |    |    +----resteasy-validator-provider-11
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-validator-provider-11-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-jsapi
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----resteasy-jsapi-3.0.24.Final.jar
+|                   |    |    |    +----resteasy-yaml-provider
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-yaml-provider-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-jaxrs
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----resteasy-jaxrs-3.0.24.Final.jar
+|                   |    |    |    |         +----resteasy-client-3.0.24.Final.jar
+|                   |    |    |    +----resteasy-jackson-provider
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-jackson-provider-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-jackson2-provider
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-jackson2-provider-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-jettison-provider
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-jettison-provider-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-jaxb-provider
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----resteasy-jaxb-provider-3.0.24.Final.jar
+|                   |    |    |    +----jose-jwt
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----jose-jwt-3.0.24.Final.jar
+|                   |    |    |    +----resteasy-cdi
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-cdi-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-crypto
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resteasy-crypto-3.0.24.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----resteasy-atom-provider
+|                   |    |    |         +----main
+|                   |    |    |              +----resteasy-atom-provider-3.0.24.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----aesh
+|                   |    |    |    +----main
+|                   |    |    |         +----aesh-0.66.19.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----logmanager
+|                   |    |    |    +----commons
+|                   |    |    |    |    +----logging
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----commons-logging-jboss-logmanager-1.0.2.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jboss-logmanager-2.0.7.Final.jar
+|                   |    |    +----common-beans
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-common-beans-2.0.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----stdio
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jboss-stdio-1.0.2.GA.jar
+|                   |    |    +----threads
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-threads-2.2.1.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----remoting-jmx
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----remoting-jmx-3.0.0.Final.jar
+|                   |    |    +----xnio
+|                   |    |    |    +----netty
+|                   |    |    |    |    +----netty-xnio-transport
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    |              +----netty-xnio-transport-0.1.2.Final.jar
+|                   |    |    |    +----nio
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----xnio-nio-3.5.4.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----xnio-api-3.5.4.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----msc
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-msc-1.2.7.SP1.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----ironjacamar
+|                   |    |    |    +----impl
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----ironjacamar-deployers-common-1.4.6.Final.jar
+|                   |    |    |    |         +----ironjacamar-common-impl-1.4.6.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----ironjacamar-core-impl-1.4.6.Final.jar
+|                   |    |    |    |         +----ironjacamar-validator-1.4.6.Final.jar
+|                   |    |    |    +----jdbcadapters
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----ironjacamar-jdbc-1.4.6.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----api
+|                   |    |    |         +----main
+|                   |    |    |              +----ironjacamar-core-api-1.4.6.Final.jar
+|                   |    |    |              +----ironjacamar-common-spi-1.4.6.Final.jar
+|                   |    |    |              +----ironjacamar-common-api-1.4.6.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----jboss-transaction-spi
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-transaction-spi-7.6.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----as
+|                   |    |    |    +----jsr77
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-jsr77-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----remoting
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-remoting-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----jaxr
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-jaxr-11.0.0.Final.jar
+|                   |    |    |    +----cmp
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-cmp-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----weld
+|                   |    |    |    |    +----beanvalidation
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----wildfly-weld-bean-validation-11.0.0.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----webservices
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-weld-webservices-11.0.0.Final.jar
+|                   |    |    |    |    +----jpa
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-weld-jpa-11.0.0.Final.jar
+|                   |    |    |    |    +----transactions
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-weld-transactions-11.0.0.Final.jar
+|                   |    |    |    |    +----common
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-weld-common-11.0.0.Final.jar
+|                   |    |    |    |    +----spi
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----wildfly-weld-spi-11.0.0.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----main
+|                   |    |    |    |    |    +----wildfly-weld-11.0.0.Final.jar
+|                   |    |    |    |    |    +----module.xml
+|                   |    |    |    |    +----ejb
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----wildfly-weld-ejb-11.0.0.Final.jar
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----jacorb
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-jacorb-11.0.0.Final.jar
+|                   |    |    |    +----domain-management
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-domain-management-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----domain-add-user
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----webservices
+|                   |    |    |    |    +----server
+|                   |    |    |    |    |    +----integration
+|                   |    |    |    |    |         +----main
+|                   |    |    |    |    |              +----module.xml
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-webservices-server-integration-11.0.0.Final.jar
+|                   |    |    |    |         +----jbossws-cxf-resources-5.1.9.Final-wildfly1100.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----deployment-scanner
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-deployment-scanner-3.0.8.Final.jar
+|                   |    |    |    +----standalone
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----xts
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-xts-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----security
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-security-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----mail
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-mail-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----web
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-web-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----ee
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-ee-11.0.0.Final.jar
+|                   |    |    |    +----jmx
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-jmx-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----vault-tool
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----core-security
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-core-security-3.0.8.Final.jar
+|                   |    |    |    +----appclient
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-appclient-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----network
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-network-3.0.8.Final.jar
+|                   |    |    |    +----clustering
+|                   |    |    |    |    +----jgroups
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-jgroups-extension-11.0.0.Final.jar
+|                   |    |    |    |    +----web
+|                   |    |    |    |    |    +----infinispan
+|                   |    |    |    |    |         +----main
+|                   |    |    |    |    |              +----module.xml
+|                   |    |    |    |    +----common
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----wildfly-clustering-common-11.0.0.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----infinispan
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    |         +----wildfly-clustering-infinispan-extension-11.0.0.Final.jar
+|                   |    |    |    |    +----ejb3
+|                   |    |    |    |         +----infinispan
+|                   |    |    |    |              +----main
+|                   |    |    |    |                   +----module.xml
+|                   |    |    |    +----jpa
+|                   |    |    |    |    +----hibernate
+|                   |    |    |    |    |    +----4
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----spi
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----jipijapa-spi-11.0.0.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----openjpa
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-jpa-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----server
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-server-3.0.8.Final.jar
+|                   |    |    |    +----protocol
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-protocol-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----cli
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-cli-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----product
+|                   |    |    |    |    +----wildfly-full
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----dir
+|                   |    |    |    |              +----META-INF
+|                   |    |    |    |                   +----MANIFEST.MF
+|                   |    |    |    +----core-security-api
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-core-security-api-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----jsf
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-jsf-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----controller
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-controller-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----domain-http-error-context
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-domain-http-error-context-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----host-controller
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-host-controller-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----transactions
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-transactions-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----jsf-injection
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-jsf-injection-11.0.0.Final.jar
+|                   |    |    |    |         +----weld-core-jsf-2.4.3.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----deployment-repository
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-deployment-repository-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----version
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-version-3.0.8.Final.jar
+|                   |    |    |    +----threads
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-threads-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----naming
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-naming-11.0.0.Final.jar
+|                   |    |    |    +----domain-http-interface
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-domain-http-interface-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----system-jmx
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-system-jmx-11.0.0.Final.jar
+|                   |    |    |    +----web-common
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-web-common-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----connector
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-connector-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----sar
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-sar-11.0.0.Final.jar
+|                   |    |    |    +----controller-client
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-controller-client-3.0.8.Final.jar
+|                   |    |    |    +----modcluster
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----management-client-content
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-management-client-content-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----process-controller
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-process-controller-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----platform-mbean
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-platform-mbean-3.0.8.Final.jar
+|                   |    |    |    +----jaxrs
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-jaxrs-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----configadmin
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-configadmin-11.0.0.Final.jar
+|                   |    |    |    +----jdr
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----resources
+|                   |    |    |    |         |    +----plugins.properties
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-jdr-11.0.0.Final.jar
+|                   |    |    |    +----messaging
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-messaging-11.0.0.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----pojo
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----wildfly-pojo-11.0.0.Final.jar
+|                   |    |    |    +----logging
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-logging-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----ejb3
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-ejb3-11.0.0.Final.jar
+|                   |    |    |    |         +----timers
+|                   |    |    |    |         |    +----timer-sql.properties
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----patching
+|                   |    |    |    |    +----cli
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----wildfly-patching-3.0.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----console
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----release-stream-2.9.15.Final-resources.jar
+|                   |    |    |    +----security-api
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    |              +----wildfly-security-api-11.0.0.Final.jar
+|                   |    |    +----log4j
+|                   |    |    |    +----logmanager
+|                   |    |    |         +----main
+|                   |    |    |              +----log4j-jboss-logmanager-1.1.4.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----narayana
+|                   |    |    |    +----txframework
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----txframework-5.5.30.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----rts
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----restat-bridge-5.5.30.Final.jar
+|                   |    |    |    |         +----restat-api-5.5.30.Final.jar
+|                   |    |    |    |         +----restat-util-5.5.30.Final.jar
+|                   |    |    |    |         +----restat-integration-5.5.30.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----compensations
+|                   |    |    |         +----main
+|                   |    |    |              +----compensations-5.5.30.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----dmr
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-dmr-1.4.1.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----modules
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    +----genericjms
+|                   |    |    |    +----main
+|                   |    |    |         +----META-INF
+|                   |    |    |         |    +----ra.xml
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----generic-jms-ra-jar-2.0.0.Final.jar
+|                   |    |    +----ejb
+|                   |    |    |    +----remote
+|                   |    |    |         +----protocol
+|                   |    |    |              +----main
+|                   |    |    |                   +----module.xml
+|                   |    |    +----metadata
+|                   |    |    |    +----web
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----jboss-metadata-web-10.0.2.Final.jar
+|                   |    |    |    +----appclient
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jboss-metadata-appclient-10.0.2.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----ear
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----jboss-metadata-ear-10.0.2.Final.jar
+|                   |    |    |    +----common
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jboss-metadata-common-10.0.2.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |    |    +----module.xml
+|                   |    |    |    +----ejb
+|                   |    |    |         +----main
+|                   |    |    |              +----jboss-metadata-ejb-10.0.2.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----iiop-client
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jboss-iiop-client-1.0.1.Final.jar
+|                   |    |    +----logging
+|                   |    |    |    +----jul-to-slf4j-stub
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jul-to-slf4j-stub-1.0.1.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-logging-3.3.1.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----remote-naming
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    +----remoting3
+|                   |    |    |    +----remoting-jmx
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    +----jandex
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jandex-2.0.3.Final.jar
+|                   |    |    +----ws
+|                   |    |    |    +----tools
+|                   |    |    |    |    +----wsconsume
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----common
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----jbossws-common-tools-1.2.4.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----wsprovide
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----jaxws-client
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----jbossws-cxf-jaspi-5.1.9.Final.jar
+|                   |    |    |    |         +----jbossws-cxf-client-5.1.9.Final.jar
+|                   |    |    |    +----jaxws-undertow-httpspi
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jaxws-undertow-httpspi-1.0.1.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----common
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jbossws-common-3.1.5.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----spi
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jbossws-spi-3.1.4.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----api
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----jbossws-api-1.0.3.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----cxf
+|                   |    |    |    |    +----jbossws-cxf-factories
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----jbossws-cxf-factories-5.1.9.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----jbossws-cxf-server
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----jbossws-cxf-server-5.1.9.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----jbossws-cxf-transports-udp
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----jbossws-cxf-transports-udp-5.1.9.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----jbossws-cxf-client
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----jbossws-cxf-transports-undertow
+|                   |    |    |    |    |    +----main
+|                   |    |    |    |    |         +----jbossws-cxf-transports-undertow-5.1.9.Final.jar
+|                   |    |    |    |    |         +----module.xml
+|                   |    |    |    |    +----sts
+|                   |    |    |    |         +----main
+|                   |    |    |    |              +----module.xml
+|                   |    |    |    +----saaj-impl
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    +----ejb3
+|                   |    |         +----main
+|                   |    |              +----jboss-ejb3-ext-api-2.2.0.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----jberet
+|                   |    |    +----jberet-core
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----jberet-core-1.2.4.Final.jar
+|                   |    +----slf4j
+|                   |    |    +----impl
+|                   |    |    |    +----main
+|                   |    |    |         +----jbosgi-xservice.properties
+|                   |    |    |         +----slf4j-jboss-logmanager-1.0.3.GA.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----ext
+|                   |    |    |    +----main
+|                   |    |    |         +----slf4j-ext-1.7.22.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----main
+|                   |    |         +----slf4j-api-1.7.22.jar
+|                   |    |         +----module.xml
+|                   |    +----antlr
+|                   |    |    +----main
+|                   |    |         +----module.xml
+|                   |    |         +----antlr-2.7.7.jar
+|                   |    +----jgroups
+|                   |    |    +----azure
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----jgroups-azure-1.1.0.Final.jar
+|                   |    |    +----main
+|                   |    |         +----jgroups-3.6.13.Final.jar
+|                   |    |         +----module.xml
+|                   |    +----picketlink
+|                   |    |    +----idm
+|                   |    |    |    +----schema
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----picketlink-idm-simple-schema-2.5.5.SP8.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----api
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----picketlink-idm-api-2.5.5.SP8.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----picketlink-idm-impl-2.5.5.SP8.jar
+|                   |    |    +----core
+|                   |    |    |    +----api
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----picketlink-api-2.5.5.SP8.jar
+|                   |    |    |    +----main
+|                   |    |    |         +----picketlink-impl-2.5.5.SP8.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----config
+|                   |    |    |    +----main
+|                   |    |    |         +----picketlink-config-2.5.5.SP8.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----common
+|                   |    |    |    +----main
+|                   |    |    |         +----picketlink-common-2.5.5.SP8.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----federation
+|                   |    |    |    +----bindings
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----picketlink-wildfly8-2.5.5.SP8.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----picketlink-federation-2.5.5.SP8.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----main
+|                   |    |         +----module.xml
+|                   |    +----joda
+|                   |    |    +----time
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----joda-time-2.9.7.jar
+|                   |    +----hibernate
+|                   |    |    +----commons-annotations
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----hibernate-commons-annotations-5.0.1.Final.jar
+|                   |    |    +----envers
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    +----validator
+|                   |    |    |    +----cdi
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----hibernate-validator-cdi-5.3.5.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----main
+|                   |    |    |         +----hibernate-validator-5.3.5.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----5.0
+|                   |    |    |    +----module.xml
+|                   |    |    +----4.3
+|                   |    |    |    +----module.xml
+|                   |    |    +----search
+|                   |    |    |    +----backend-jms
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----hibernate-search-backend-jms-5.5.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----orm
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----hibernate-search-orm-5.5.8.Final.jar
+|                   |    |    |    +----backend-jgroups
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----hibernate-search-backend-jgroups-5.5.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----engine
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    |         +----hibernate-search-engine-5.5.8.Final.jar
+|                   |    |    |    +----serialization-avro
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    |              +----hibernate-search-serialization-avro-5.5.8.Final.jar
+|                   |    |    +----jipijapa-hibernate4-3
+|                   |    |    |    +----main
+|                   |    |    |         +----jipijapa-hibernate4-3-11.0.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----infinispan
+|                   |    |    |    +----main
+|                   |    |    |         +----hibernate-infinispan-5.1.10.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----main
+|                   |    |    |    +----hibernate-entitymanager-5.1.10.Final.jar
+|                   |    |    |    +----module.xml
+|                   |    |    |    +----hibernate-core-5.1.10.Final.jar
+|                   |    |    |    +----hibernate-envers-5.1.10.Final.jar
+|                   |    |    |    +----hibernate-java8-5.1.10.Final.jar
+|                   |    |    +----4.1
+|                   |    |    |    +----module.xml
+|                   |    |    |    +----jipijapa-hibernate4-1-11.0.0.Final.jar
+|                   |    |    +----jipijapa-hibernate5
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----jipijapa-hibernate5-11.0.0.Final.jar
+|                   |    +----glassfish
+|                   |    |    +----javax
+|                   |    |         +----enterprise
+|                   |    |         |    +----concurrent
+|                   |    |         |         +----main
+|                   |    |         |              +----javax.enterprise.concurrent-1.0.jar
+|                   |    |         |              +----module.xml
+|                   |    |         +----el
+|                   |    |         |    +----main
+|                   |    |         |         +----javax.el-impl-3.0.1-b08-jbossorg-1.jar
+|                   |    |         |         +----module.xml
+|                   |    |         +----json
+|                   |    |              +----main
+|                   |    |                   +----javax.json-1.0.4.jar
+|                   |    |                   +----module.xml
+|                   |    +----opensaml
+|                   |    |    +----main
+|                   |    |         +----opensaml-soap-api-3.1.1.jar
+|                   |    |         +----cryptacular-1.2.0.jar
+|                   |    |         +----opensaml-profile-api-3.1.1.jar
+|                   |    |         +----opensaml-xacml-saml-impl-3.1.1.jar
+|                   |    |         +----opensaml-saml-api-3.1.1.jar
+|                   |    |         +----opensaml-security-impl-3.1.1.jar
+|                   |    |         +----opensaml-xacml-api-3.1.1.jar
+|                   |    |         +----opensaml-xacml-impl-3.1.1.jar
+|                   |    |         +----module.xml
+|                   |    |         +----opensaml-xmlsec-impl-3.1.1.jar
+|                   |    |         +----opensaml-core-3.1.1.jar
+|                   |    |         +----opensaml-security-api-3.1.1.jar
+|                   |    |         +----opensaml-saml-impl-3.1.1.jar
+|                   |    |         +----java-support-7.1.1.jar
+|                   |    |         +----opensaml-xmlsec-api-3.1.1.jar
+|                   |    |         +----opensaml-xacml-saml-api-3.1.1.jar
+|                   |    +----fusesource
+|                   |    |    +----jansi
+|                   |    |         +----main
+|                   |    |              +----jansi-1.16.jar
+|                   |    |              +----module.xml
+|                   |    +----jaxen
+|                   |    |    +----main
+|                   |    |         +----module.xml
+|                   |    |         +----jaxen-1.1.6.jar
+|                   |    +----jsoup
+|                   |    |    +----main
+|                   |    |         +----jsoup-1.8.3.jar
+|                   |    |         +----module.xml
+|                   |    +----picketbox
+|                   |    |    +----main
+|                   |    |         +----picketbox-commons-1.0.0.final.jar
+|                   |    |         +----picketbox-infinispan-5.0.2.Final.jar
+|                   |    |         +----module.xml
+|                   |    |         +----picketbox-5.0.2.Final.jar
+|                   |    +----bouncycastle
+|                   |    |    +----main
+|                   |    |         +----bcprov-jdk15on-1.56.jar
+|                   |    |         +----bcpkix-jdk15on-1.56.jar
+|                   |    |         +----module.xml
+|                   |    |         +----bcmail-jdk15on-1.56.jar
+|                   |    +----hornetq
+|                   |    |    +----client
+|                   |    |         +----main
+|                   |    |              +----hornetq-commons-2.4.7.Final.jar
+|                   |    |              +----module.xml
+|                   |    |              +----hornetq-core-client-2.4.7.Final.jar
+|                   |    |              +----hornetq-jms-client-2.4.7.Final.jar
+|                   |    +----yaml
+|                   |    |    +----snakeyaml
+|                   |    |         +----main
+|                   |    |              +----snakeyaml-1.17.jar
+|                   |    |              +----module.xml
+|                   |    +----infinispan
+|                   |    |    +----commons
+|                   |    |    |    +----main
+|                   |    |    |         +----module.xml
+|                   |    |    |         +----infinispan-commons-8.2.8.Final.jar
+|                   |    |    +----cachestore
+|                   |    |    |    +----jdbc
+|                   |    |    |    |    +----main
+|                   |    |    |    |         +----infinispan-cachestore-jdbc-8.2.8.Final.jar
+|                   |    |    |    |         +----module.xml
+|                   |    |    |    +----remote
+|                   |    |    |         +----main
+|                   |    |    |              +----infinispan-cachestore-remote-8.2.8.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----main
+|                   |    |    |    +----infinispan-core-8.2.8.Final.jar
+|                   |    |    |    +----module.xml
+|                   |    |    +----client
+|                   |    |         +----hotrod
+|                   |    |              +----main
+|                   |    |                   +----infinispan-client-hotrod-8.2.8.Final.jar
+|                   |    |                   +----module.xml
+|                   |    +----codehaus
+|                   |    |    +----woodstox
+|                   |    |    |    +----main
+|                   |    |    |         +----woodstox-core-5.0.3.jar
+|                   |    |    |         +----stax2-api-3.1.4.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----jettison
+|                   |    |    |    +----main
+|                   |    |    |         +----jettison-1.3.8.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----jackson
+|                   |    |         +----jackson-core-asl
+|                   |    |         |    +----main
+|                   |    |         |         +----jackson-core-asl-1.9.13.jar
+|                   |    |         |         +----module.xml
+|                   |    |         +----jackson-jaxrs
+|                   |    |         |    +----main
+|                   |    |         |         +----jackson-jaxrs-1.9.13.jar
+|                   |    |         |         +----module.xml
+|                   |    |         +----jackson-xc
+|                   |    |         |    +----main
+|                   |    |         |         +----jackson-xc-1.9.13.jar
+|                   |    |         |         +----module.xml
+|                   |    |         +----jackson-mapper-asl
+|                   |    |              +----main
+|                   |    |                   +----module.xml
+|                   |    |                   +----jackson-mapper-asl-1.9.13.jar
+|                   |    +----jdom
+|                   |    |    +----main
+|                   |    |         +----module.xml
+|                   |    |         +----jdom-1.1.3.jar
+|                   |    +----apache
+|                   |         +----activemq
+|                   |         |    +----artemis
+|                   |         |         +----journal
+|                   |         |         |    +----main
+|                   |         |         |         +----artemis-commons-1.5.5.jbossorg-008.jar
+|                   |         |         |         +----artemis-journal-1.5.5.jbossorg-008.jar
+|                   |         |         |         +----module.xml
+|                   |         |         |         +----lib
+|                   |         |         |         |    +----linux-x86_64
+|                   |         |         |         |    |    +----libartemis-native-64.so
+|                   |         |         |         |    +----linux-i686
+|                   |         |         |         |         +----libartemis-native-32.so
+|                   |         |         |         +----artemis-native-1.5.5.jbossorg-008.jar
+|                   |         |         +----protocol
+|                   |         |         |    +----amqp
+|                   |         |         |    |    +----main
+|                   |         |         |    |         +----artemis-amqp-protocol-1.5.5.jbossorg-008.jar
+|                   |         |         |    |         +----module.xml
+|                   |         |         |    +----stomp
+|                   |         |         |    |    +----main
+|                   |         |         |    |         +----artemis-stomp-protocol-1.5.5.jbossorg-008.jar
+|                   |         |         |    |         +----module.xml
+|                   |         |         |    +----hornetq
+|                   |         |         |         +----main
+|                   |         |         |              +----artemis-hornetq-protocol-1.5.5.jbossorg-008.jar
+|                   |         |         |              +----module.xml
+|                   |         |         +----ra
+|                   |         |         |    +----main
+|                   |         |         |         +----module.xml
+|                   |         |         |         +----artemis-ra-1.5.5.jbossorg-008.jar
+|                   |         |         +----main
+|                   |         |              +----artemis-hqclient-protocol-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-jms-server-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-server-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-selector-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-service-extensions-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-jdbc-store-1.5.5.jbossorg-008.jar
+|                   |         |              +----module.xml
+|                   |         |              +----artemis-core-client-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-jms-client-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-dto-1.5.5.jbossorg-008.jar
+|                   |         |              +----artemis-cli-1.5.5.jbossorg-008.jar
+|                   |         +----james
+|                   |         |    +----mime4j
+|                   |         |         +----main
+|                   |         |              +----module.xml
+|                   |         |              +----apache-mime4j-0.6.jar
+|                   |         +----httpcomponents
+|                   |         |    +----main
+|                   |         |         +----httpclient-4.5.2.jar
+|                   |         |         +----httpasyncclient-4.1.2.jar
+|                   |         |         +----module.xml
+|                   |         |         +----httpcore-4.4.4.jar
+|                   |         |         +----httpmime-4.5.2.jar
+|                   |         |         +----httpcore-nio-4.4.4.jar
+|                   |         +----lucene
+|                   |         |    +----internal
+|                   |         |    |    +----main
+|                   |         |    |         +----lucene-backward-codecs-5.3.1.jar
+|                   |         |    |         +----lucene-misc-5.3.1.jar
+|                   |         |    |         +----module.xml
+|                   |         |    +----main
+|                   |         |         +----lucene-core-5.3.1.jar
+|                   |         |         +----lucene-queryparser-5.3.1.jar
+|                   |         |         +----module.xml
+|                   |         |         +----lucene-analyzers-common-5.3.1.jar
+|                   |         |         +----lucene-facet-5.3.1.jar
+|                   |         |         +----lucene-queries-5.3.1.jar
+|                   |         +----qpid
+|                   |         |    +----proton
+|                   |         |         +----main
+|                   |         |              +----proton-jms-0.8.jar
+|                   |         |              +----proton-j-0.8.jar
+|                   |         |              +----module.xml
+|                   |         +----commons
+|                   |         |    +----codec
+|                   |         |    |    +----main
+|                   |         |    |         +----commons-codec-1.10.jar
+|                   |         |    |         +----module.xml
+|                   |         |    +----io
+|                   |         |    |    +----main
+|                   |         |    |         +----commons-io-2.5.jar
+|                   |         |    |         +----module.xml
+|                   |         |    +----cli
+|                   |         |    |    +----main
+|                   |         |    |         +----commons-cli-1.3.1.jar
+|                   |         |    |         +----module.xml
+|                   |         |    +----lang
+|                   |         |    |    +----main
+|                   |         |    |         +----module.xml
+|                   |         |    |         +----commons-lang-2.6.jar
+|                   |         |    +----collections
+|                   |         |    |    +----main
+|                   |         |    |         +----module.xml
+|                   |         |    |         +----commons-collections-3.2.2.jar
+|                   |         |    +----beanutils
+|                   |         |    |    +----main
+|                   |         |    |         +----module.xml
+|                   |         |    |         +----commons-beanutils-1.9.3.jar
+|                   |         |    +----pool
+|                   |         |    |    +----main
+|                   |         |    |         +----commons-pool-1.6.jar
+|                   |         |    |         +----module.xml
+|                   |         |    +----logging
+|                   |         |         +----main
+|                   |         |              +----module.xml
+|                   |         +----xml-resolver
+|                   |         |    +----main
+|                   |         |         +----xml-resolver-1.2.jar
+|                   |         |         +----module.xml
+|                   |         +----neethi
+|                   |         |    +----main
+|                   |         |         +----module.xml
+|                   |         |         +----neethi-3.0.3.jar
+|                   |         +----santuario
+|                   |         |    +----xmlsec
+|                   |         |         +----main
+|                   |         |              +----xmlsec-2.0.8.jar
+|                   |         |              +----module.xml
+|                   |         +----xerces
+|                   |         |    +----main
+|                   |         |         +----module.xml
+|                   |         |         +----xercesImpl-2.11.0.SP5.jar
+|                   |         +----velocity
+|                   |         |    +----main
+|                   |         |         +----velocity-1.7.jar
+|                   |         |         +----module.xml
+|                   |         +----xalan
+|                   |         |    +----main
+|                   |         |         +----serializer-2.7.1.jbossorg-4.jar
+|                   |         |         +----module.xml
+|                   |         |         +----xalan-2.7.1.jbossorg-4.jar
+|                   |         +----avro
+|                   |         |    +----main
+|                   |         |         +----avro-1.7.6.jar
+|                   |         |         +----module.xml
+|                   |         +----openjpa
+|                   |         |    +----main
+|                   |         |         +----jipijapa-openjpa-11.0.0.Final.jar
+|                   |         |         +----module.xml
+|                   |         +----cxf
+|                   |         |    +----impl
+|                   |         |    |    +----main
+|                   |         |    |         +----cxf-xjc-boolean-3.0.5.jar
+|                   |         |    |         +----cxf-rt-ws-policy-3.1.12.jar
+|                   |         |    |         +----cxf-rt-transports-jms-3.1.12.jar
+|                   |         |    |         +----cxf-rt-transports-local-3.1.12.jar
+|                   |         |    |         +----cxf-rt-transports-http-hc-3.1.12.jar
+|                   |         |    |         +----cxf-xjc-dv-3.0.5.jar
+|                   |         |    |         +----cxf-rt-management-3.1.12.jar
+|                   |         |    |         +----cxf-tools-validator-3.1.12.jar
+|                   |         |    |         +----cxf-rt-features-clustering-3.1.12.jar
+|                   |         |    |         +----cxf-xjc-ts-3.0.5.jar
+|                   |         |    |         +----cxf-xjc-runtime-3.0.5.jar
+|                   |         |    |         +----cxf-tools-wsdlto-core-3.1.12.jar
+|                   |         |    |         +----cxf-services-ws-discovery-api-3.1.12.jar
+|                   |         |    |         +----cxf-rt-bindings-coloc-3.1.12.jar
+|                   |         |    |         +----module.xml
+|                   |         |    |         +----cxf-rt-databinding-jaxb-3.1.12.jar
+|                   |         |    |         +----cxf-rt-security-saml-3.1.12.jar
+|                   |         |    |         +----cxf-tools-wsdlto-databinding-jaxb-3.1.12.jar
+|                   |         |    |         +----cxf-tools-common-3.1.12.jar
+|                   |         |    |         +----cxf-rt-bindings-object-3.1.12.jar
+|                   |         |    |         +----cxf-rt-ws-rm-3.1.12.jar
+|                   |         |    |         +----cxf-rt-ws-addr-3.1.12.jar
+|                   |         |    |         +----cxf-rt-bindings-xml-3.1.12.jar
+|                   |         |    |         +----cxf-rt-ws-mex-3.1.12.jar
+|                   |         |    |         +----cxf-rt-bindings-soap-3.1.12.jar
+|                   |         |    |         +----cxf-rt-security-3.1.12.jar
+|                   |         |    |         +----cxf-rt-wsdl-3.1.12.jar
+|                   |         |    |         +----cxf-rt-security-3.1.12-jandex.jar
+|                   |         |    |         +----cxf-rt-databinding-aegis-3.1.12.jar
+|                   |         |    |         +----cxf-rt-frontend-jaxws-3.1.12.jar
+|                   |         |    |         +----cxf-xjc-bug986-3.0.5.jar
+|                   |         |    |         +----cxf-tools-java2ws-3.1.12.jar
+|                   |         |    |         +----cxf-rt-transports-http-3.1.12.jar
+|                   |         |    |         +----cxf-rt-frontend-simple-3.1.12.jar
+|                   |         |    |         +----cxf-tools-wsdlto-frontend-jaxws-3.1.12.jar
+|                   |         |    +----services-sts
+|                   |         |    |    +----main
+|                   |         |    |         +----module.xml
+|                   |         |    |         +----cxf-services-sts-core-3.1.12.jar
+|                   |         |    +----ws-security
+|                   |         |    |    +----main
+|                   |         |    |         +----cxf-rt-ws-security-3.1.12.jar
+|                   |         |    |         +----module.xml
+|                   |         |    |         +----cxf-rt-ws-security-3.1.12-jandex.jar
+|                   |         |    +----main
+|                   |         |         +----cxf-core-3.1.12.jar
+|                   |         |         +----module.xml
+|                   |         +----log4j
+|                   |         |    +----main
+|                   |         |         +----module.xml
+|                   |         +----ws
+|                   |              +----security
+|                   |              |    +----main
+|                   |              |         +----wss4j-ws-security-dom-2.1.10.jar
+|                   |              |         +----wss4j-bindings-2.1.10.jar
+|                   |              |         +----wss4j-ws-security-stax-2.1.10.jar
+|                   |              |         +----wss4j-policy-2.1.10.jar
+|                   |              |         +----jasypt-1.9.2.jar
+|                   |              |         +----wss4j-ws-security-common-2.1.10.jar
+|                   |              |         +----module.xml
+|                   |              |         +----wss4j-ws-security-policy-stax-2.1.10.jar
+|                   |              +----xmlschema
+|                   |                   +----main
+|                   |                        +----xmlschema-core-2.2.1.jar
+|                   |                        +----module.xml
+|                   +----ch
+|                   |    +----qos
+|                   |         +----cal10n
+|                   |              +----main
+|                   |                   +----cal10n-api-0.8.1.jar
+|                   |                   +----module.xml
+|                   +----io
+|                   |    +----netty
+|                   |    |    +----main
+|                   |    |         +----netty-all-4.1.9.Final.jar
+|                   |    |         +----module.xml
+|                   |    +----undertow
+|                   |         +----websocket
+|                   |         |    +----main
+|                   |         |         +----undertow-websockets-jsr-1.4.18.Final.jar
+|                   |         |         +----module.xml
+|                   |         +----servlet
+|                   |         |    +----main
+|                   |         |         +----undertow-servlet-1.4.18.Final.jar
+|                   |         |         +----module.xml
+|                   |         +----core
+|                   |         |    +----main
+|                   |         |         +----module.xml
+|                   |         |         +----undertow-core-1.4.18.Final.jar
+|                   |         +----js
+|                   |         |    +----main
+|                   |         |         +----undertow-js-1.0.2.Final.jar
+|                   |         |         +----module.xml
+|                   |         +----jsp
+|                   |              +----main
+|                   |                   +----jastow-2.0.2.Final.jar
+|                   |                   +----module.xml
+|                   +----gnu
+|                   |    +----getopt
+|                   |         +----main
+|                   |              +----java-getopt-1.0.13.jar
+|                   |              +----module.xml
+|                   +----ibm
+|                   |    +----jdk
+|                   |         +----main
+|                   |              +----module.xml
+|                   +----javax
+|                   |    +----jws
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----jsr181-api-1.0-MR1.jar
+|                   |    +----transaction
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----jboss-transaction-api_1.2_spec-1.0.1.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----websocket
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----jboss-websocket-api_1.1_spec-1.1.1.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----servlet
+|                   |    |    +----jstl
+|                   |    |    |    +----api
+|                   |    |    |         +----main
+|                   |    |    |              +----taglibs-standard-compat-1.2.6-RC1.jar
+|                   |    |    |              +----taglibs-standard-spec-1.2.6-RC1.jar
+|                   |    |    |              +----taglibs-standard-impl-1.2.6-RC1.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----api
+|                   |    |    |    +----main
+|                   |    |    |         +----jboss-servlet-api_3.1_spec-1.0.0.Final.jar
+|                   |    |    |         +----module.xml
+|                   |    |    +----jsp
+|                   |    |         +----api
+|                   |    |              +----main
+|                   |    |                   +----module.xml
+|                   |    |                   +----jboss-jsp-api_2.3_spec-1.0.1.Final.jar
+|                   |    +----enterprise
+|                   |    |    +----concurrent
+|                   |    |    |    +----api
+|                   |    |    |         +----main
+|                   |    |    |              +----jboss-concurrency-api_1.0_spec-1.0.0.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----cdi-api-1.2.jar
+|                   |    |              +----module.xml
+|                   |    +----inject
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----javax.inject-1.jar
+|                   |    +----security
+|                   |    |    +----auth
+|                   |    |    |    +----message
+|                   |    |    |         +----api
+|                   |    |    |              +----main
+|                   |    |    |                   +----jboss-jaspi-api_1.1_spec-1.0.0.Final.jar
+|                   |    |    |                   +----module.xml
+|                   |    |    +----jacc
+|                   |    |         +----api
+|                   |    |              +----main
+|                   |    |                   +----module.xml
+|                   |    |                   +----jboss-jacc-api_1.5_spec-1.0.1.Final.jar
+|                   |    +----mail
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----javax.mail-1.5.6.jar
+|                   |    |              +----module.xml
+|                   |    +----el
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----jboss-el-api_3.0_spec-1.0.9.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----activation
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----activation-1.1.1.jar
+|                   |    |              +----module.xml
+|                   |    +----management
+|                   |    |    +----j2ee
+|                   |    |         +----api
+|                   |    |              +----main
+|                   |    |                   +----jboss-j2eemgmt-api_1.1_spec-1.0.1.Final.jar
+|                   |    |                   +----module.xml
+|                   |    +----annotation
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----jboss-annotations-api_1.2_spec-1.0.0.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----xml
+|                   |    |    +----stream
+|                   |    |    |    +----api
+|                   |    |    |         +----main
+|                   |    |    |              +----module.xml
+|                   |    |    +----soap
+|                   |    |    |    +----api
+|                   |    |    |         +----main
+|                   |    |    |              +----jboss-saaj-api_1.3_spec-1.0.4.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----rpc
+|                   |    |    |    +----api
+|                   |    |    |         +----main
+|                   |    |    |              +----jboss-jaxrpc-api_1.1_spec-1.0.1.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----bind
+|                   |    |    |    +----api
+|                   |    |    |         +----main
+|                   |    |    |              +----jboss-jaxb-api_2.2_spec-1.0.4.Final.jar
+|                   |    |    |              +----module.xml
+|                   |    |    +----ws
+|                   |    |         +----api
+|                   |    |              +----main
+|                   |    |                   +----jboss-jaxws-api_2.2_spec-2.0.4.Final.jar
+|                   |    |                   +----module.xml
+|                   |    +----json
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    +----batch
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----jboss-batch-api_1.0_spec-1.0.0.Final.jar
+|                   |    +----persistence
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----hibernate-jpa-2.1-api-1.0.0.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----wsdl4j
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----wsdl4j-1.6.3.jar
+|                   |    |              +----module.xml
+|                   |    +----api
+|                   |    |    +----main
+|                   |    |         +----module.xml
+|                   |    +----jms
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----jboss-jms-api_2.0_spec-1.0.1.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----resource
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----jboss-connector-api_1.7_spec-1.0.0.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----orb
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----openjdk-orb-8.0.8.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----rmi
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    +----ejb
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----jboss-ejb-api_3.2_spec-1.0.0.Final.jar
+|                   |    +----interceptor
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----module.xml
+|                   |    |              +----jboss-interceptors-api_1.2_spec-1.0.0.Final.jar
+|                   |    +----faces
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----jboss-jsf-api_2.2_spec-2.2.13.jar
+|                   |    |              +----module.xml
+|                   |    +----validation
+|                   |    |    +----api
+|                   |    |         +----main
+|                   |    |              +----validation-api-1.1.0.Final.jar
+|                   |    |              +----module.xml
+|                   |    +----ws
+|                   |    |    +----rs
+|                   |    |         +----api
+|                   |    |              +----main
+|                   |    |                   +----module.xml
+|                   |    |                   +----jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar
+|                   |    +----sql
+|                   |         +----api
+|                   |              +----main
+|                   |                   +----module.xml
+|                   +----com
+|                        +----sun
+|                        |    +----xsom
+|                        |    |    +----main
+|                        |    |         +----module.xml
+|                        |    |         +----xsom-20140925.jar
+|                        |    +----xml
+|                        |    |    +----txw2
+|                        |    |    |    +----main
+|                        |    |    |         +----module.xml
+|                        |    |    |         +----txw2-2.2.11.jbossorg-1.jar
+|                        |    |    +----fastinfoset
+|                        |    |    |    +----main
+|                        |    |    |         +----FastInfoset-1.2.13.jar
+|                        |    |    |         +----module.xml
+|                        |    |    +----bind
+|                        |    |    |    +----main
+|                        |    |    |         +----jaxb-runtime-2.2.11.jbossorg-1.jar
+|                        |    |    |         +----jaxb-core-2.2.11.jbossorg-1.jar
+|                        |    |    |         +----codemodel-2.2.11.jbossorg-1.jar
+|                        |    |    |         +----jaxb-xjc-2.2.11.jbossorg-1.jar
+|                        |    |    |         +----rngom-2.2.11.jbossorg-1.jar
+|                        |    |    |         +----jaxb-jxc-2.2.11.jbossorg-1.jar
+|                        |    |    |         +----module.xml
+|                        |    |    +----messaging
+|                        |    |         +----saaj
+|                        |    |              +----main
+|                        |    |                   +----saaj-impl-1.3.16-jbossorg-1.jar
+|                        |    |                   +----module.xml
+|                        |    +----istack
+|                        |    |    +----main
+|                        |    |         +----istack-commons-runtime-2.21.jar
+|                        |    |         +----istack-commons-tools-2.21.jar
+|                        |    |         +----module.xml
+|                        |    +----jsf-impl
+|                        |         +----main
+|                        |              +----module.xml
+|                        |              +----jsf-impl-2.2.13.SP4.jar
+|                        +----google
+|                        |    +----guava
+|                        |         +----main
+|                        |              +----guava-20.0.jar
+|                        |              +----module.xml
+|                        +----microsoft
+|                        |    +----azure
+|                        |         +----storage
+|                        |              +----main
+|                        |                   +----module.xml
+|                        |                   +----azure-storage-5.0.0.jar
+|                        +----github
+|                        |    +----spullara
+|                        |    |    +----mustache
+|                        |    |         +----main
+|                        |    |              +----compiler-0.9.4.jar
+|                        |    |              +----module.xml
+|                        |    +----relaxng
+|                        |         +----main
+|                        |              +----relaxngDatatype-2011.1.jar
+|                        |              +----module.xml
+|                        +----h2database
+|                        |    +----h2
+|                        |         +----main
+|                        |              +----h2-1.4.193.jar
+|                        |              +----module.xml
+|                        +----fasterxml
+|                             +----classmate
+|                             |    +----main
+|                             |         +----classmate-1.3.3.jar
+|                             |         +----module.xml
+|                             +----jackson
+|                                  +----core
+|                                  |    +----jackson-databind
+|                                  |    |    +----main
+|                                  |    |         +----jackson-databind-2.8.9.jar
+|                                  |    |         +----module.xml
+|                                  |    +----jackson-core
+|                                  |    |    +----main
+|                                  |    |         +----jackson-core-2.8.9.jar
+|                                  |    |         +----module.xml
+|                                  |    +----jackson-annotations
+|                                  |         +----main
+|                                  |              +----module.xml
+|                                  |              +----jackson-annotations-2.8.9.jar
+|                                  +----datatype
+|                                  |    +----jackson-datatype-jdk8
+|                                  |    |    +----main
+|                                  |    |         +----module.xml
+|                                  |    |         +----jackson-datatype-jdk8-2.8.9.jar
+|                                  |    +----jackson-datatype-jsr310
+|                                  |         +----main
+|                                  |              +----jackson-datatype-jsr310-2.8.9.jar
+|                                  |              +----module.xml
+|                                  +----jaxrs
+|                                       +----jackson-jaxrs-json-provider
+|                                            +----main
+|                                                 +----jackson-module-jaxb-annotations-2.8.9.jar
+|                                                 +----jackson-jaxrs-json-provider-2.8.9.jar
+|                                                 +----module.xml
+|                                                 +----jackson-jaxrs-base-2.8.9.jar
++----domain
+     +----configuration
+     |    +----application-roles.properties
+     |    +----domain.xml
+     |    +----logging.properties
+     |    +----host.xml
+     |    +----mgmt-groups.properties
+     |    +----default-server-logging.properties
+     |    +----host-slave.xml
+     |    +----host-master.xml
+     |    +----application-users.properties
+     |    +----mgmt-users.properties
+     +----.DS_Store
+     +----data
+     |    +----content
+     +----tmp
