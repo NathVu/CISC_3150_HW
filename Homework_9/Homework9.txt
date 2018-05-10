@@ -1,0 +1,5 @@
+Question 1) - citing Professor Bukhari - the school computer was at fault
+Question 2) - notifyAll() will wake all of the threads but when they are put
+                to sleep the program is locked and notifyAll() does not unlock it
+Question 3) - to have 2 threads share an objects monitor simply use a synchronize
+                block it will keep them organized 
